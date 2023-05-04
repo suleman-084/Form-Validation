@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormValidation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="form-container">
+      <h2>Login</h2>
+      <form class="form" action="" onsubmit="return validateForm()">
+        <input type="text" id="username" placeholder="User name" />
+        <p id="userError" class="error"></p>
+        <input type="email" id="email" placeholder="Email" />
+        <p id="emailError" class="error"></p>
+        <input type="password" id="pass" placeholder="Password" />
+        <p id="passError" class="error"></p>
+        <input type="password" id="cpass" placeholder="Confirm Password" />
+        <p id="cpassError" class="error"></p>
+        <input type="submit" />
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
